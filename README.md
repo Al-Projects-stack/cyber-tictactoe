@@ -34,3 +34,10 @@ Then open `http://localhost:5550` in your browser.
 - **Backend:** Python / Flask
 - **Frontend:** Vanilla JS, CSS (Orbitron font, CSS animations)
 - **No database** all game state is client-side
+
+## What I Learned
+
+- Working out the win conditions for a 3D tic-tac-toe board: 8 rows per layer, 3 vertical columns, 6 face diagonals, and 4 space diagonals that cut through all three layers simultaneously
+- Building a basic AI opponent with a win-then-block heuristic and understanding exactly where that approach breaks down against optimal play
+- Using CSS perspective, transform-style: preserve-3d, and keyframe animations to create depth effects without a game engine
+- Keeping all game state client-side and using Flask only to serve the initial HTML page
